@@ -8,7 +8,7 @@ pipeline {
     }
     stage('BUILD') {
       steps {
-        sh 'mvn clean compile package'
+        sh '/opt/apache-maven-3.5.0/bin/mvn clean compile package'
       }
     }
   }
